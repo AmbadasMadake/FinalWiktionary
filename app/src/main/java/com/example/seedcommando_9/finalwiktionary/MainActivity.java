@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     String wordName,wikiAPIUrl,checkWordBR,urlResult="";
     String  send="";
 
-
+//added to git
     String main_result ="",result=null;
 
     @Override
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         send="";
         urlResult="";
         wikiAPIUrl="https://en.wiktionary.org/w/api.php?action=query&prop=revisions&titles="+wordName+"&rvprop=content&format=json&utf8=";
-
+//
 
         //call asynctask method onpreexecute
         new getData().execute(wikiAPIUrl,"s",urlResult);
